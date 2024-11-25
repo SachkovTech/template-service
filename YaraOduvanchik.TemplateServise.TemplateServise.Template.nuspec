@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>YaraOduvanchik.Service.Templates</id>
+    <version>1.0.0</version>
+    <authors>YaraOduvanchik</authors>
+    <description>A template for quickly setting up projects with preconfigured settings.</description>
+    <tags>dotnet-new;templates</tags>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  
+  <files>
+    <file src="..\template-service\**\*.*" exclude="ProjectTemplate\**\bin\**\*.*;ProjectTemplate\**\obj\**\*.*;YaraOduvanchik.Service.Templates.1.0.0.nupkg;Nuget.config;YaraOduvanchik.TemplateServise.TemplateServise.Template.nuspec" target="content" />
+</files>
+</package>

@@ -22,8 +22,5 @@
 			"defaultValue": "net8.0"
 		}
 	},
-	"primaryOutputs": [
-		{ "path": "src/ProjectTemplate/ProjectTemplate.csproj" },
-		{ "path": "src/SharedKernel/SharedKernel.csproj" }
-	]
+	"primaryOutputs": [{ "path": "src/ProjectTemplate/ProjectTemplate.csproj" }]
 }
