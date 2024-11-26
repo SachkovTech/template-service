@@ -19,7 +19,7 @@
 
 2. Установите шаблон:
    ```bash
-   dotnet new install --nuget-source "https://nuget.pkg.github.com/SachkovTech/index.json" "YaraOduvanchik.Service.Templates::1.0.0"
+   dotnet new install "YaraOduvanchik.Service.Templates::1.0.0" --nuget-source "https://nuget.pkg.github.com/SachkovTech/index.json"
    ```
 
 ### Создание проекта
