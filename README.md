@@ -30,6 +30,11 @@
     ```bash
    mkdir myFolder
    ```
+
+   Затем перейдите в эту папку:
+    ```bash
+   cd myFolder
+   ```
    
    Если ваш шаблон имеет короткое имя webapiasync, выполните команду:
    ```bash
