@@ -1,26 +1,70 @@
 {
 	"author": "Nikolay",
 	"name": "ASP.NET Core Web API Template",
-	"description": "Template for creating an ASP.NET Core Web API with configurable settings, error handling, and asynchronous methods support.",
-	"identity": "Nikolay.AspNetCoreWebApiTemplate.1.0",
+	"description": "Template for creating an ASP.NET Core Web API following Clean Architecture principles with a pre-configured ExceptionMiddleware.",
+	"identity": "CleanArchitectureTemplate.1.1",
 	"shortName": "webapiasync",
 	"tags": {
 		"language": "C#",
 		"type": "project"
 	},
-	"sourceName": "ProjectTemplate",
+	"solutionName": "MySolution",
 	"symbols": {
-		"Framework": {
+		"SolutionName": {
 			"type": "parameter",
-			"description": "The target .NET version for the project.",
-			"datatype": "choice",
-			"choices": [
-				{
-					"choice": "net8.0"
-				}
-			],
-			"defaultValue": "net8.0"
+			"defaultValue": "MySolution",
+			"description": "Name of the solution"
 		}
 	},
-	"primaryOutputs": [{ "path": "src/ProjectTemplate/ProjectTemplate.csproj" }]
+	"sourceName": "CleanArchitectureTemplate",
+	"replaces": [
+		"CleanArchitectureTemplate.sln",
+		"CleanArchitectureTemplate.sln.DotSettings.user"
+	],
+	"folders": {
+		"src": {
+			"CleanArchitectureTemplate.Api": {
+				"csproj": "CleanArchitectureTemplate.Api.csproj"
+			},
+			"CleanArchitectureTemplate.Application": {
+				"csproj": "CleanArchitectureTemplate.Application.csproj"
+			},
+			"CleanArchitectureTemplate.Domain": {
+				"csproj": "CleanArchitectureTemplate.Domain.csproj"
+			},
+			"CleanArchitectureTemplate.Infrastructure": {
+				"csproj": "CleanArchitectureTemplate.Infrastructure.csproj"
+			}
+		},
+		"content": {
+			".idea": {}
+		},
+		"config": {
+			".template.config": {
+				"template.json": "template.json"
+			}
+		}
+	},
+	"files": {
+		"CleanArchitectureTemplate.sln": "./{{SolutionName}}.sln",
+		"CleanArchitectureTemplate.sln.DotSettings.user": "./{{SolutionName}}.sln.DotSettings.user"
+	},
+	"renameFiles": [
+		{
+			"src": "CleanArchitectureTemplate.Api",
+			"to": "{{SolutionName}}.Api"
+		},
+		{
+			"src": "CleanArchitectureTemplate.Application",
+			"to": "{{SolutionName}}.Application"
+		},
+		{
+			"src": "CleanArchitectureTemplate.Domain",
+			"to": "{{SolutionName}}.Domain"
+		},
+		{
+			"src": "CleanArchitectureTemplate.Infrastructure",
+			"to": "{{SolutionName}}.Infrastructure"
+		}
+	]
 }
