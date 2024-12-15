@@ -19,7 +19,7 @@
 
 2. Установите шаблон:
    ```bash
-   dotnet new install "YaraOduvanchik.Service.Templates::1.0.0" --nuget-source "https://nuget.pkg.github.com/SachkovTech/index.json"
+   dotnet new install "CleanArchitectureTemplate::1.0.0" --nuget-source "https://nuget.pkg.github.com/SachkovTech/index.json"
    ```
 
 ### Создание проекта
@@ -31,14 +31,14 @@
    mkdir myFolder
    ```
 
-   Затем перейдите в эту папку:
+   Затем перейдите в эту папку (Вместо "ProjectName" пишите название сервиса):
     ```bash
-   cd myFolder
+   cd ProjectName
    ```
    
-   Если ваш шаблон имеет короткое имя webapiasync, выполните команду:
+   Если ваш шаблон имеет короткое имя webapiasync, выполните команду (Вместо "ProjectName" пишите название сервиса):
    ```bash
-   dotnet new webapiasync
+   dotnet new webapiasync -n ProjectName
    ```
    Для указания конкретной версии шаблона используйте:
    ```bash
