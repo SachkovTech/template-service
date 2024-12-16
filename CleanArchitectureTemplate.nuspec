@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
-    <id>YaraOduvanchik.Service.Templates</id>
+    <id>CleanArchitectureTemplate</id>
     <version>1.0.0</version>
     <authors>YaraOduvanchik</authors>
     <description>A template for quickly setting up projects with preconfigured settings.</description>
@@ -11,6 +11,6 @@
   </metadata>
   
   <files>
-    <file src="..\template-service\**\*.*" exclude="ProjectTemplate\**\bin\**\*.*;ProjectTemplate\**\obj\**\*.*;YaraOduvanchik.Service.Templates.1.0.0.nupkg;Nuget.config;YaraOduvanchik.TemplateServise.TemplateServise.Template.nuspec" target="content" />
+    <file src="..\CleanArchitectureTemplate\**\*.*" exclude="CleanArchitectureTemplate\**\bin\**\*.*;CleanArchitectureTemplate\**\obj\**\*.*;Nuget.config;CleanArchitectureTemplate.nuspec" target="content" />
 </files>
 </package>
