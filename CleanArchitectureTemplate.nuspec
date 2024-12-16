@@ -11,6 +11,6 @@
   </metadata>
   
   <files>
-    <file src="..\CleanArchitectureTemplate\**\*.*" exclude="CleanArchitectureTemplate\**\bin\**\*.*;CleanArchitectureTemplate\**\obj\**\*.*;Nuget.config;CleanArchitectureTemplate.nuspec" target="content" />
+  <file src="..\CleanArchitectureTemplate\**\*.*" exclude="CleanArchitectureTemplate\**\bin\**\*.*;CleanArchitectureTemplate\**\obj\**\*.*;Nuget.config;CleanArchitectureTemplate.nuspec;nuget.exe" target="content" />
 </files>
 </package>
